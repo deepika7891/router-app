@@ -1,3 +1,5 @@
+
+
 /* nav bar */
 nav {
   font-size: 24px;
@@ -22,16 +24,68 @@ ul {
   letter-spacing: 2px;
   margin-top: 5em;
 }
-
-/* weather css */
-.container-fluid {
+   
+.container-fluid{
   height: 100vh;
-  background-color: rgb(70, 66, 66);
-  display: flex;
-  align-items: center;
   justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  background-color: antiquewhite;
+  width: auto;
+  margin-left: 21em;
+  overflow: hidden;
+
+}
+.cal-box{
+     /* height: 65%; */
+    background-color: white;
+     /* width: 35%; */
+     border-radius: 10px;
+     padding: 20px;
+}
+.form1 .display{
+   display: flex;
+   justify-content: flex-end;
+   margin: 5px 0px 15px 0px ;
+}
+.form1 input{
+  height: 60px;
+  /* border: none; */
+  outline: none;
+  width: 60px;
+  font-size: 16px;
+  background-color: white;
+  margin: 2px;
+  border-radius: 10px;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+}
+.form1 input:hover{
+  background-color: gray;
+  color: white;
+}
+.form1 input:active{
+  /* background-color: ; */
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.form1 .equal{
+  width: 120px;
+  background-image: linear-gradient(to right,#e7546c,#dddd54);
+}
+.form1 .display input{
+  text-align: right;
+  flex: 1;
+  font-size: 40px;
+  padding: 5px 10px;
+  color: black;
+  background-image: linear-gradient(to right,#e7546c,#dddd54);
 }
 
+/* weather css */
 .weather-box {
   background-image: linear-gradient(to right, #ef7c90, #daa939);
   height: 30em;
@@ -59,6 +113,7 @@ ul {
   border-radius: 24px;
   padding: 8px 20px;
   font-size: 15px;
+  margin-top: 2px;
 }
 
 input::placeholder {
@@ -73,8 +128,8 @@ input::placeholder {
   display: block;
   margin: 34px;
   text-align: center;
+  color: black;
 }
-
 
 .img-weather {
   margin: 10px;
@@ -84,8 +139,9 @@ input::placeholder {
 .temp {
   text-align: center;
   font-size: 28px;
+  color: black;
+  margin-top: 0px;
 }
-
 .weather-loction {
   font-size: 30px;
   text-align: center;
@@ -95,59 +151,28 @@ input::placeholder {
 .data {
   float: left;
   margin-left: 63px;
+  color: black;
 }
 
 .element {
-  margin-top: 2em;
+  margin-top: -11em;
   margin-left: 0px;
   line-height: 10px;
+  color: black;
 }
-/* calculator css */
-.Calculator-box {
-  background-color: white;
-  height: 30em;
-  width: 25em;
-  border-radius: 10px;
-}
-
-.calInput {
-  height: 118px;
-  border: none;
-  padding: 32px 35px;
-  font-size: 50px;
-  margin-top: 0px;
-  background-image: linear-gradient(to right, #ef7c90, #daa939);
-  width: 100%;
-  text-align: right;
-  border-radius: 10px;
-}
-
-.number {
-  line-height: 24px;
-  margin-top: 50px;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0;
-}
-
   /* todo list css */
 .todo-container {
   height: 30em;
   width: 25em;
   background-image: linear-gradient(to right, #ef7c90, #daa939);
+  border-radius: 10px;
 }
 
 .todo-text {
   background-color: transparent;
   border: none;
   border-bottom-style: groove;
-  margin-left: 20px;
+  margin-left: -4em;
   resize: none;
   width: 18em;
   margin-top: 15px;
@@ -180,6 +205,7 @@ input::-webkit-inner-spin-button {
 .todo-li {
   padding: 10px;
   font-size: 20px;
+  margin-left: -10em;
 }
 
 .closebtn {
@@ -192,10 +218,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* switch case */
-.App {
-  height: 100vh;
-}
-
 .heading {
   text-align: center;
   color: white;
@@ -207,13 +229,15 @@ input::-webkit-inner-spin-button {
   min-height: 480px;
   width: 330px;
   border-radius: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .textarea {
   width: 75%;
   padding: 6px 12px;
   height: 39px;
-  margin-left: 12px;
+  margin-left: -4em;
   border-radius: 8px;
   resize: none;
   margin-top: 16px;
@@ -262,7 +286,9 @@ input::-webkit-inner-spin-button {
   font-size: 20px;
   color: white;
 }
-
+.switch-ul li{
+  float: left;
+}
 .input-data {
   height: 26px;
   width: 27px;
@@ -283,8 +309,6 @@ li a{
     width: 100%;
     font-size: 7px;
     float: left;
-    text-align: center;
-    justify-content: center;
   }
 
   ul {
@@ -308,6 +332,7 @@ li a{
   .container-fluid {
 
     margin-left: 0px;
+    width: 100%;
   }
 
 }

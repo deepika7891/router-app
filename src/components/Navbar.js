@@ -19,7 +19,7 @@ export default function Navbar() {
          <Link to="/ToDo">Todo-list </Link>
          </li>
         <li>
-        <Link to="/SwitchComponent">Switch Case</Link>
+        <Link to="/SwitchComponent">Switch-Case</Link>
         </li>
       </ul>
     </div>

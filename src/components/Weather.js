@@ -47,14 +47,14 @@ function Weather() {
 
                             <div className='element'>
                                     <div className='data'>
-                                        <div className='humidity-percent'>
-                                            <p>{weatherData.main.humidity} %</p>
+                                        <div >
+                                            <p style={{color:"black"}}>{weatherData.main.humidity} %</p>
                                         </div>
                                         <div className='humidity-text'>humidity</div>
                                     </div>
                                     <div className='data'>
-                                        <div className='wind-percent'>
-                                          <p>{weatherData.wind.speed} km/h</p>
+                                        <div >
+                                          <p style={{color:"black"}}>{weatherData.wind.speed} km/h</p>
                                         </div>
                                         <div className='wind-text'>wind</div>
                                     </div>
