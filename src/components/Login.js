@@ -27,7 +27,7 @@ function Login() {
             <div className='Register Container'>
                 <div className='row' style={{ height: "100vh", width: "100%" }}>
                     <div className='col-md' style={{ background: "#ff000096" }}></div>
-                    <div className='col-md' style={{ background: "#fbf9e9" }}>
+                    <div className='col-md' style={{ background: "#dbdfa5" }}>
                     </div>
                 </div>
                 <div className='Register-card'>
@@ -42,7 +42,7 @@ function Login() {
 
                         <button type='submit' className='login-btn'>Login</button>
 
-                        <p className='Sign-in'>Don't have an account ? <a href='/'>Register Here</a></p>
+                        <p className='Sign-in'>Don't have an account ? <a href='/register'>Register Here</a></p>
                     </form>
                 </div>
             </div>

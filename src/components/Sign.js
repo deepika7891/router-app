@@ -10,7 +10,7 @@ function Register() {
 
   const SubmitEvent = (e) => {
           e.preventDefault();
-          const {email, name, password} = e.target.elements
+          const {email, name, password} = e.target.elements;
           const storedData = localStorage.getItem('userdata') !=null ? JSON.parse(localStorage.getItem('userdata')) : []; 
           console.log(storedData);
           const signup = {
@@ -24,7 +24,7 @@ function Register() {
             storedData.push(signup);
             localStorage.setItem('userdata', JSON.stringify(storedData));
             alert("registeration successful");
-            navigate("/login");
+            navigate("/");
           }
           else{
             alert("already exist")
@@ -39,7 +39,7 @@ function Register() {
     <div className='Container Register'>
       <div className='row' style={{ height: "100vh", width: "100%" }}>
         <div className='col-md' style={{ background: "#ff000096" }}></div>
-        <div className='col-md' style={{ background: "#fbf9e9" }}>
+        <div className='col-md' style={{ background: "#dbdfa5" }}>
         </div>
       </div>
       <div className='Register-card'>
@@ -54,7 +54,7 @@ function Register() {
 
           <button type='submit' className='login-btn'>Register</button>
 
-          <p className='Sign-in'>Have an account ?<a href='/login'> Sign In</a></p>
+          <p className='Sign-in'>Have an account ?<a href='/'> Sign In</a></p>
         </form>
 
       </div>

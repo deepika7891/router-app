@@ -1,16 +1,15 @@
 import React from 'react'
+import './home.css';
 import {Routes, Route} from 'react-router-dom';
+import Navbar from './Navbar';
 import Calculator from './Calculator';
 import Weather from  './Weather';
-import './home.css';
 import ToDo from './Todo';
 import SwitchComponent from './SwitchCase';
-import Navbar from './Navbar';
 
 function Home() {
   return (
       <>
-     
           <Navbar />
           <Routes>
               <Route exact path='/Calculator' element={<Calculator />}></Route>
@@ -18,7 +17,7 @@ function Home() {
               <Route exact path='/Todo' element={<ToDo/>}></Route>
               <Route exact path='/SwitchComponent' element={<SwitchComponent/>}></Route>
           </Routes>
-       
+         
       </>
   )
 }
